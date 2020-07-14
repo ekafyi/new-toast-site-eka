@@ -401,7 +401,7 @@ export default ({ children, ...props }) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Chris Biscardi's Digital Garden</title>
+        <title>(Not) Chris Biscardi's Digital Garden</title>
         <meta name="twitter:title" content={title} />
         <meta name="og:title" content={title} />
         <meta name="description" content={description} />
@@ -433,6 +433,15 @@ export default ({ children, ...props }) => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap"
           rel="stylesheet"
         />
+
+        <script
+          type="module"
+          src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+        ></script>
+        <script
+          nomodule
+          src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+        ></script>
       </Helmet>
       <Header />
       {props.title && (
